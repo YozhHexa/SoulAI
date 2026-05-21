@@ -12,8 +12,10 @@ os.environ['HF_ENDPOINT'] = 'https://hf-mirror.com'
 # ⚙️ LOAD CONFIGURATION
 # ==========================================
 load_dotenv()
-CWD = "D://WorKBench//SoulOSv2"
+
+CWD = os.getenv("PROJECT_ROOT")
 DB_DIR = os.path.join(CWD, "db")
+
 
 MEMORY_SOURCES_LIST = [
     {"path": os.getenv("DIARY_PATH"), "type": "diary"},
