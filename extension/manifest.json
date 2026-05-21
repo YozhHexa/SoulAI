@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "AI Memory Clipper",
+  "version": "1.0",
+  "description": "Send websites directly to your AI's brain.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_title": "Save to AI Memory"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
